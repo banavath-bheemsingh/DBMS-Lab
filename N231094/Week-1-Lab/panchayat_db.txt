@@ -1,0 +1,37 @@
+CREATE DATABASE grampanchayat;
+USE grampanchayat;
+
+CREATE TABLE Citizen(
+	citizen_id INT PRIMARY KEY,
+    full_name VARCHAR(100) NOT NULL,
+    date_of_birth DATE NOT NULL,
+    gender CHAR(1) CHECK( gender="M" OR gender="F"),
+    mobile_number VARCHAR(15) UNIQUE NOT NULL,
+    occupation VARCHAR(50),
+    village_name VARCHAR(50) NOT NULL,
+    is_active BOOLEAN NOT NULL
+    );
+    
+    
+INSERT INTO Citizen 
+VALUES
+(101,"Ravi kumar",'1995-06-15','M',9876500001,"Farmer","Ramapuram",TRUE),
+(102,"Lakshmi Devi",'1988-11-22','F',9876500002,"Tailor","Ramapuram",TRUE),
+(103,"Suresh Babu",'1992-03-10','M',9876500003,"Farmer","Seethampeta",TRUE),
+(104,"Anjali Rao",'2000-08-05','F',9876500004,"Student","Ramapuram",TRUE),
+(105,"Kiran Kumar",'1985-01-18','M',9876500005,"Eletrician","Seethampeta",TRUE),
+(106,"Meena Kumari",'1998-12-30','F',9876500006,"Teacher","Lakshmipuram",FALSE);
+
+    
+SELECT * FROM Citizen;
+
+ALTER TABLE Citizen ADD District CHAR(50);
+ALTER TABLE Citizen DROP District;
+ALTER TABLE Citizen RENAME TO Citizen;
+UPDATE Citizen set District="Vizag" where citizen_id=103; 
+
+
+   
+    
+    
+    
