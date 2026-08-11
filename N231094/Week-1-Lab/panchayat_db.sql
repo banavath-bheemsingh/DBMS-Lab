@@ -13,7 +13,7 @@ CREATE TABLE Citizen(
     );
     
     
-INSERT INTO Citizen 
+INSERT INTO Citizen ()
 VALUES
 (101,"Ravi kumar",'1995-06-15','M',9876500001,"Farmer","Ramapuram",TRUE),
 (102,"Lakshmi Devi",'1988-11-22','F',9876500002,"Tailor","Ramapuram",TRUE),
@@ -64,6 +64,7 @@ VALUES
 
 SELECT *FROM Certificate_Application;
 
+
 CREATE TABLE Panchayat_Office(
 	office_id INT PRIMARY KEY,
     office_name VARCHAR(100) NOT NULL,
@@ -78,12 +79,12 @@ INSERT INTO Panchayat_Office()
 VALUES
 (1,"Ramapuram Grampanchayat","Ramapuram",'521101','0866000001',"ramapuram@gp.example",'09:00:00',TRUE),
 (2,"Seethampeta Gram Panchayat","Seethampeta",'521102','0866000002',"seethampeta@gp.example",'09:30:00',TRUE),
-(3,"Lakshmipuram Grampanchayat","Lakshmipuram",'521103','086600003',"lakshmipuram@gp.example",'09:00:00',TRUE),
-(4,"Krishnapuram Grampanchayat","Krishnapuram",'521104','086600004',"krishnapuram@gp.example",'10:00:00',TRUE),
-(5,"Venkatapuram Grampanchayat","Venkatapuram",'521105','086600005',"venkatapuram@gp.example",'09:00:00',TRUE),
-(6,"Gopalapuram Grampanchayat","Gopalapuram",'521106','086600006',"gopalapuram@gp.example",'09:00:00',FALSE);
+(3,"Lakshmipuram Grampanchayat","Lakshmipuram",'521103','0866000003',"lakshmipuram@gp.example",'09:00:00',TRUE),
+(4,"Krishnapuram Grampanchayat","Krishnapuram",'521104','0866000004',"krishnapuram@gp.example",'10:00:00',TRUE),
+(5,"Venkatapuram Grampanchayat","Venkatapuram",'521105','0866000005',"venkatapuram@gp.example",'09:00:00',TRUE),
+(6,"Gopalapuram Grampanchayat","Gopalapuram",'521106','0866000006',"gopalapuram@gp.example",'09:00:00',FALSE);
 
-SELECT *FROM Panchayat_Office;
+ 
 
 INSERT INTO Citizen()
 VALUES
