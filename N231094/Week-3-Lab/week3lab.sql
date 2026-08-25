@@ -197,11 +197,6 @@ VALUES
 
 -- 21. Delete a citizen whose certificate application already exist.Record the system generated error
 DELETE FROM citizen WHERE citizen_id = 101;
-SELECT full_name FROM citizen 
-WHERE citizen_id IN (
-    SELECT citizen_id 
-    FROM certificate_application
-);
 -- Error Code: 1451. Cannot delete or update a parent row: a foreign key constraint fails 
 
 
