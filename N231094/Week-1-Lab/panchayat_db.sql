@@ -13,7 +13,7 @@ CREATE TABLE Citizen(
     );
     
     
-INSERT INTO Citizen ()
+INSERT INTO Citizen (citizen_id,full_name,date_of_birth,gender,mobile_number,occupation,village_name,is_active)
 VALUES
 (101,"Ravi kumar",'1995-06-15','M',9876500001,"Farmer","Ramapuram",TRUE),
 (102,"Lakshmi Devi",'1988-11-22','F',9876500002,"Tailor","Ramapuram",TRUE),
